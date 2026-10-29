@@ -24,3 +24,6 @@ Homepage: Planning An Event links. Services: race director FAQ. Events: voluntee
 
 ## Sponsorship & Opportunities page
 The `/opportunities/` page is powered by `opportunities.json` at the repository root. To update the opportunities before Decap CMS is installed, edit that file in GitHub (pencil icon), changing titles, descriptions, email subjects, or adding/removing entries from the `opportunities` list. Keep the JSON syntax valid. `assets/opportunities.js` renders the cards automatically. Once Decap CMS is configured, this JSON can be registered as an editable file collection. No sponsorship prices, guaranteed placements, or confirmed vendor spaces are claimed on this page.
+
+## Editing sponsorship opportunities
+Update `opportunities.json`. Each entry in `events` becomes its own expandable event dropdown. Add an event object with `name`, `date`, `location`, `image`, `summary`, `status`, and `opportunities`. Each opportunity has `title`, `eyebrow`, `description`, and `subject`. The email address is controlled by the top-level `email` field. The first event opens by default.
