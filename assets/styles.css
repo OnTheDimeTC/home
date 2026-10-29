@@ -162,31 +162,12 @@ body:has(>.header + main > .hero) .stripe{position:relative!important;padding-ri
 /* Results viewer: seamless navy back toolbar, no orange underline */
 .results-fullscreen .viewer-toolbar{border-bottom:0!important;}
 
-/* Experimental hero: Daisy left, copy center-left, bridge unobstructed on right. */
+/* Restored right-side Daisy composition, preserving the latest arrow fix. */
 @media(min-width:901px){
- .hero{grid-template-columns:minmax(205px,.65fr) minmax(410px,1.35fr)!important;column-gap:clamp(20px,2.5vw,48px)!important;padding-left:max(4%,calc((100vw - 1430px)/2))!important;padding-right:clamp(22px,3vw,60px)!important}
- .hero-mascot{grid-column:1!important;grid-row:1!important;justify-content:flex-end!important;align-self:center!important;transform:translateY(26px)!important}
- .hero-mascot img{width:clamp(205px,24vw,355px)!important;max-height:420px!important}
- .hero-copy{grid-column:2!important;grid-row:1!important;max-width:620px!important;justify-self:start!important;margin:0!important}
- .hero h1{font-size:clamp(3.5rem,6.4vw,6.2rem)!important}
- .hero-photo{background-image:linear-gradient(90deg,rgba(2,11,25,.60) 0%,rgba(2,11,25,.58) 48%,rgba(2,11,25,.05) 100%),url('OTDLandscape.png')!important}
-}
-@media(min-width:901px) and (max-width:1150px){.hero{grid-template-columns:minmax(170px,.55fr) minmax(360px,1.45fr)!important}.hero-mascot img{width:clamp(175px,21vw,260px)!important}.hero h1{font-size:clamp(3.3rem,6vw,5.2rem)!important}}
-
-/* 2026-10-29: tight left-anchored hero composition; leave bridge unobstructed. */
-@media (min-width:901px){
- body:has(>.header + main > .hero) .hero{
-   display:grid!important;
-   grid-template-columns:clamp(290px,27vw,420px) minmax(380px,560px)!important;
-   justify-content:start!important;
-   column-gap:clamp(8px,1.4vw,24px)!important;
-   padding-left:clamp(18px,3.2vw,64px)!important;
-   padding-right:24px!important;
- }
- .hero-mascot{grid-column:1!important;grid-row:1!important;justify-content:center!important;transform:none!important;align-self:center!important}
- .hero-mascot img{width:100%!important;max-width:420px!important;max-height:clamp(320px,52vh,520px)!important;object-fit:contain!important}
- .hero-copy{grid-column:2!important;grid-row:1!important;justify-self:start!important;max-width:560px!important;margin:0!important}
- .hero-heading h1{font-size:clamp(3.3rem,5.3vw,5.9rem)!important}
+ body:has(>.header + main > .hero) .hero{display:grid!important;grid-template-columns:minmax(0,1.1fr) minmax(280px,.8fr)!important;align-items:center!important;justify-content:normal!important;gap:clamp(30px,5vw,80px)!important;padding-left:max(6%,calc((100vw - 1250px)/2))!important;padding-right:max(6%,calc((100vw - 1250px)/2))!important}
+ .hero-copy{grid-column:1!important;grid-row:1!important;justify-self:start!important;max-width:620px!important;margin:0!important}
+ .hero-mascot{grid-column:2!important;grid-row:1!important;justify-content:center!important;align-self:center!important;transform:none!important}
+ .hero-mascot img{width:min(100%,440px)!important;max-height:500px!important;object-fit:contain!important}
 }
 /* Chevron is drawn as a stable centered CSS shape, not a displaced animated element. */
 body:has(>.header + main > .hero) .stripe{padding-right:65px!important;overflow:visible!important}
