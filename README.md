@@ -14,3 +14,6 @@ If GitHub Pages still shows the old version, wait for deployment and force-refre
 Repository: https://github.com/OnTheDimeTC/home
 Site: https://onthedimetc.github.io/home/
 All HTML pages use <base href="/home/"> so shared assets and navigation resolve from the renamed repository.
+
+
+Updated clean routes: `/home/live/` and `/home/historical/` (or `/live/` and `/historical/` once the custom domain is attached to this repository). Legacy results routes are retained for existing links. Favicon source is full-body Daisy, centered with generous transparent padding; references have a version query to refresh cached icons.
