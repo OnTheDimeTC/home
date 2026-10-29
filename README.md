@@ -1,14 +1,12 @@
-# On The Dime Timing – updated GitHub Pages website
+# On The Dime Timing — navigation and branding repair
 
-Upload the **contents** of this ZIP to the root of the `website` repository, preserving the `assets/` directory.
+Upload the full contents of this folder to the root of `OnTheDimeTC/website`.
 
-- `services.html` now contains the full pricing cards and add-ons directly in the HTML, so pricing is visible even when `content.json` fails to load. Update prices in `services.html` (and `content.json` if you use the configuration).
-- `assets/` contains the OTD and Merriest Night artwork with filenames matching the HTML.
-- Instagram is linked to `@onthedimetiming` as listed on the event registration page. The Facebook button currently opens a Facebook search because the exact official page URL was not verifiable; replace that URL with your official page URL.
-- All regular pages have a navy/orange branded transition when following internal links, plus an OTD favicon.
-- The live and historical results pages retain full-screen iframes and only a back-to-home bar. An iframe cannot conceal the GitHub origin from browser developer tools, and embedding still depends on the results apps' frame policies.
-- Test on `https://onthedimetc.github.io/website/` before moving your domain.
+- Clean routes are served by directories (`events/index.html`, etc.).
+- Old `.html` routes remain working standalone pages rather than redirecting.
+- Removed the navigation overlay and meta-refresh redirects responsible for flashing/loops.
+- Full OTD logo in header and footer; Daisy favicon.
+- Footer is horizontal navy, without the tall image stretched as a background.
+- Assets use `<base href="/website/">` to support GitHub project Pages.
 
-
-## Clean URLs
-Upload all folders (`home/`, `events/`, `services/`, `about/`, `contact/`, `live-results/`, `historical-results/`) and `assets/` with their structure intact. GitHub Pages serves `/website/events` from `events/index.html` (may normalize to `/events/`). The `<base href="/website/">` tag keeps assets and links working on nested routes. Root `/website/` remains the homepage. The old `.html` routes redirect to clean paths. Facebook links point to the official provided profile.
+If GitHub Pages still shows the old version, wait for deployment and force-refresh with Ctrl+Shift+R.
