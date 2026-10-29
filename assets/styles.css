@@ -305,3 +305,73 @@ body:has(>.header + main > .hero) .stripe{padding-right:65px!important;overflow:
   .race-content,.tile,.features article {padding:20px!important;}
   .stripe {min-height:47px!important;display:flex!important;align-items:center!important;justify-content:center!important;flex-wrap:nowrap!important;}
 }
+
+/* 2026-10-29: dedicated portrait sunset hero for mobile only. */
+.mobile-hero-logo{display:none!important}
+@media(max-width:900px){
+ body:has(>.header + main > .hero) .hero{
+   box-sizing:border-box!important;
+   height:auto!important;
+   min-height:calc(100svh - var(--otd-header-height,86px) - 50px)!important;
+   padding:clamp(45px,8svh,95px) 5% clamp(25px,5svh,65px)!important;
+   display:flex!important;align-items:center!important;justify-content:center!important;
+ }
+ body:has(>.header + main > .hero) .hero-photo{
+   background-image:linear-gradient(180deg,rgba(1,9,27,.30) 0%,rgba(1,9,27,.18) 55%,rgba(1,9,27,.23) 100%),url('mobile-starry-bridge.png')!important;
+   background-position:center center!important;background-size:cover!important;background-repeat:no-repeat!important;
+ }
+ body:has(>.header + main > .hero) .hero-copy{
+   transform:translateY(clamp(10px,3svh,32px))!important;
+   margin:0 auto!important;width:100%!important;max-width:620px!important;
+   display:flex!important;flex-direction:column!important;align-items:center!important;text-align:center!important;
+ }
+ body:has(>.header + main > .hero) .mobile-hero-logo{
+   display:block!important;width:clamp(118px,27vw,180px)!important;height:auto!important;
+   max-height:180px!important;object-fit:contain!important;
+   margin:0 auto clamp(12px,2.3svh,24px)!important;
+   filter:drop-shadow(0 5px 15px rgba(0,0,0,.35))!important;
+ }
+ body:has(>.header + main > .hero) .hero-mascot{display:none!important}
+ body:has(>.header + main > .hero) + .stripe{min-height:50px!important;margin:0!important}
+}
+@media(max-width:600px){
+ body:has(>.header + main > .hero) .hero{min-height:calc(100svh - 110px - 50px)!important;padding:35px 5% 28px!important}
+ body:has(>.header + main > .hero) .hero-copy h1{font-size:clamp(2.8rem,11.3vw,4.5rem)!important;margin-bottom:16px!important}
+ body:has(>.header + main > .hero) .hero-copy .kicker{font-size:clamp(.62rem,2.5vw,.84rem)!important;letter-spacing:.13em!important;margin-bottom:14px!important}
+ body:has(>.header + main > .hero) .hero-copy>p{margin-bottom:12px!important}
+ body:has(>.header + main > .hero) .hero-copy .tagline{margin-bottom:18px!important}
+ body:has(>.header + main > .hero) .hero-copy .buttons{gap:10px!important}
+ body:has(>.header + main > .hero) .hero-copy .buttons .btn{padding:12px 15px!important}
+ .stripe{padding-left:8px!important;padding-right:45px!important;gap:4px!important}
+ .stripe .stripe-item,.stripe .stripe-star{font-size:clamp(7px,1.8vw,10px)!important}
+}
+@media(max-width:360px){body:has(>.header + main > .hero) .mobile-hero-logo{width:105px!important}body:has(>.header + main > .hero) .hero-copy h1{font-size:2.65rem!important}}
+
+/* Mobile Safari viewport and bottom toolbar refinements. */
+@media (max-width:900px){
+  html{scroll-padding-bottom:calc(24px + env(safe-area-inset-bottom,0px));}
+  body{overflow-x:hidden;}
+  .hero,.stripe,.section,.cta,.otd-footer{max-width:100%;}
+  .hero-photo{background-attachment:scroll!important;}
+  .scroll-cue{min-width:40px;min-height:40px;display:flex;align-items:center;justify-content:center;}
+  .section,.cta,.otd-footer{scroll-margin-top:20px;}
+  .otd-footer{padding-bottom:calc(30px + env(safe-area-inset-bottom,0px))!important;}
+}
+@media (max-width:600px){
+  /* Use the dynamic visible viewport: Safari's floating toolbar reduces available space. */
+  body:has(>.header + main > .hero) .hero{
+    min-height:calc(100dvh - 110px - 50px)!important;
+    padding:clamp(26px,4dvh,42px) 5% clamp(22px,4dvh,38px)!important;
+  }
+  body:has(>.header + main > .hero) .hero-copy{
+    transform:none!important;
+  }
+  .stripe{box-sizing:border-box!important;min-height:50px!important;position:relative;}
+  .stripe .scroll-cue{right:6px!important;}
+  #featured-races{padding-top:clamp(38px,7dvh,62px)!important;}
+  #featured-races .section-title{margin-bottom:24px!important;}
+  .section-title p{max-width:100%;}
+}
+@supports not (height:100dvh){
+  @media(max-width:600px){body:has(>.header + main > .hero) .hero{min-height:calc(100svh - 110px - 50px)!important;}}
+}
