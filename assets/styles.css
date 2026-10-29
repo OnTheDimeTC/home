@@ -175,3 +175,15 @@ body:has(>.header + main > .hero) .stripe{padding-right:65px!important;overflow:
 .stripe > a.scroll-cue .google-chevron{display:none!important}
 .stripe > a.scroll-cue::after{content:"";display:block;width:11px;height:11px;border-right:3px solid white;border-bottom:3px solid white;transform:translateY(-3px) rotate(45deg);box-sizing:border-box}
 @media(max-width:600px){body:has(>.header + main > .hero) .stripe{padding-right:42px!important}.stripe > a.scroll-cue{right:5px!important;width:30px!important;height:30px!important}}
+
+/* Brand swap: Daisy in navigation; full OTD emblem in hero. */
+.header .brand img{width:64px!important;height:64px!important;object-fit:contain!important}
+.hero-mascot img{width:min(100%,500px)!important;max-height:min(58svh,540px)!important;object-fit:contain!important;filter:drop-shadow(0 10px 18px rgba(0,0,0,.14))!important}
+.hero-copy .tagline{margin:18px 0 14px!important;font-weight:700!important}
+.hero-copy .buttons{margin-top:0!important}
+.otd-footer .footer-tagline{margin-top:10px!important;line-height:1.35!important}
+.otd-footer .footer-tagline strong{color:#ff5a1c!important;font-size:1.2em!important}
+@media(max-width:900px){.header .brand img{width:50px!important;height:50px!important}.hero-mascot img{max-height:30svh!important;max-width:65vw!important}}
+
+/* Match call-to-action panel to footer navy */
+.cta{background:#061b36!important;}
