@@ -32,3 +32,36 @@ body.results-fullscreen{height:100dvh;overflow:hidden;background:#fff}
 .otd-footer .footer-social{flex:1 1 240px}
 .footer-daisy{width:72px!important;height:72px!important;object-fit:contain;vertical-align:middle;margin-right:12px}
 @media(max-width:650px){.brand img{width:95px!important;height:64px!important}.otd-footer{padding:35px 6%!important}.otd-footer img{width:130px!important}}
+
+
+/* Final responsive layout and supplied OTD graphics */
+.header{background:#071d3a!important;min-height:84px}
+.brand{gap:10px;font-size:1.25rem}
+.brand img{width:88px!important;height:66px!important;object-fit:contain!important}
+.hero{display:flex!important;align-items:center!important;min-height:540px!important;padding:72px max(6%,calc((100vw - 1200px)/2))!important}
+.hero-photo{background:linear-gradient(90deg,rgba(2,11,25,.92),rgba(2,11,25,.65) 58%,rgba(2,11,25,.16)),url('otdbackground.png') center/cover!important}
+.hero-copy{max-width:780px!important;margin:0!important;text-align:left!important}
+.hero-heading{display:flex;align-items:center;gap:22px;max-width:100%}
+.hero-heading h1{margin:14px 0 18px;font-size:clamp(3.5rem,7.5vw,7.5rem);line-height:.88}
+.hero-daisy{width:clamp(88px,14vw,175px);height:auto;object-fit:contain;flex-shrink:0}
+.hero-logo,.footer-daisy{display:none!important}
+.otd-footer{background:#061b36!important;color:white!important;padding:42px max(5%,calc((100vw - 1200px)/2))!important;min-height:0!important;display:flex;flex-wrap:wrap;align-items:center;gap:24px;border-top:4px solid #ff4b0b!important}
+.otd-footer img{width:135px!important;max-height:140px!important;object-fit:contain}
+.otd-footer p,.otd-footer strong,.otd-footer small{color:#fff!important}
+.otd-footer:after{content:'';display:block;flex-basis:100%;height:clamp(95px,16vw,210px);background:url('otd-footer-alt.png') center 66%/cover no-repeat;border-radius:4px}
+@media(max-width:950px){.hero{padding:55px 6%!important}.hero-copy{text-align:left!important}.hero p{margin:0!important}.hero .buttons{justify-content:flex-start!important}}
+@media(max-width:600px){.hero{min-height:440px!important}.hero-heading{gap:10px}.hero-heading h1{font-size:clamp(2.7rem,10vw,4.5rem)}.hero-daisy{width:85px}.otd-footer:after{height:95px}}
+
+/* Hero: Daisy replaces the previous large logo card, never floats beneath heading */
+.hero{display:grid!important;grid-template-columns:minmax(0,1.1fr) minmax(250px,.9fr)!important;gap:clamp(20px,4vw,70px)!important;align-items:center!important;min-height:640px!important;padding-bottom:100px!important}
+.hero-copy{max-width:750px!important;min-width:0!important}
+.hero-heading{display:block!important}
+.hero-mascot{position:relative;z-index:1;display:flex;justify-content:center;align-items:center;min-width:0}
+.hero-mascot img{display:block;width:min(100%,460px);max-height:480px;object-fit:contain;filter:drop-shadow(0 12px 15px rgba(0,0,0,.2))}
+.hero .hero-daisy{display:none!important}
+.stripe{position:relative;padding:27px 20px 19px!important}
+.scroll-cue{position:absolute;left:50%;top:-67px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:4px;text-decoration:none;color:#fff;font-family:'Barlow Condensed',Impact,sans-serif;font-size:.75rem;letter-spacing:.15em;text-shadow:0 2px 8px #000;z-index:3;white-space:nowrap}
+.scroll-arrow{display:grid;place-items:center;background:var(--orange);width:42px;height:42px;border-radius:50%;font:900 30px/1 Arial,sans-serif;box-shadow:0 3px 15px #0006;animation:otd-arrow 1.7s ease-in-out infinite}
+@keyframes otd-arrow{0%,100%{transform:translateY(0)}50%{transform:translateY(7px)}}
+@media(max-width:950px){.hero{grid-template-columns:1fr!important;text-align:center!important;gap:20px!important;padding:45px 6% 95px!important}.hero-copy{text-align:center!important;margin:auto!important}.hero p{margin:auto!important}.hero .buttons{justify-content:center!important}.hero-mascot img{width:min(55vw,280px);max-height:300px}}
+@media(max-width:600px){.hero{min-height:0!important}.hero-mascot img{width:min(65vw,240px)}.hero-heading h1{font-size:clamp(3.3rem,12vw,5rem)!important}.scroll-cue{top:-64px}}
