@@ -268,3 +268,40 @@ body:has(>.header + main > .hero) .stripe{padding-right:65px!important;overflow:
 
 /* Match Sponsorship & Opportunities banner to the other interior-page bridge headers. */
 .pagehead.opportunities-head{background:linear-gradient(105deg,rgba(2,11,25,.84),rgba(6,22,44,.55)),url("OTDLandscape.png") center center/cover no-repeat!important;}
+
+/* Mobile refinement: keep the bridge hero, remove the large centerpiece logo. */
+@media (max-width: 900px) {
+  .hero-mascot, .hero-mascot::before { display:none!important; }
+  body:has(>.header + main > .hero) .hero {
+    display:flex!important;flex-direction:column!important;justify-content:center!important;
+    align-items:center!important;height:auto!important;min-height:0!important;
+    padding:clamp(42px,7svh,75px) 6% clamp(48px,8svh,80px)!important;
+    gap:0!important;overflow:hidden!important;
+  }
+  body:has(>.header + main > .hero) .hero-copy {
+    grid-column:auto!important;grid-row:auto!important;transform:none!important;
+    width:100%!important;max-width:640px!important;margin:0 auto!important;
+    align-items:center!important;text-align:center!important;
+  }
+  .hero-copy .buttons { justify-content:center!important; }
+  .hero-photo { background-position:60% center!important; }
+  .section { padding-top:clamp(45px,8vw,70px);padding-bottom:clamp(45px,8vw,70px); }
+  .tiles,.features {grid-template-columns:1fr!important;}
+  .pagehead {padding-top:55px;padding-bottom:55px;}
+  .pagehead h1 {overflow-wrap:break-word;}
+  img {max-width:100%;}
+}
+@media (max-width: 600px) {
+  .hero-copy .kicker {font-size:clamp(.64rem,2.5vw,.85rem)!important;letter-spacing:.12em!important;margin-bottom:18px!important;}
+  .hero-copy h1 {font-size:clamp(3.2rem,12vw,5rem)!important;line-height:.98!important;margin-bottom:22px!important;}
+  .hero-copy>p {font-size:clamp(1rem,4vw,1.18rem)!important;line-height:1.45!important;margin-bottom:17px!important;}
+  .hero-copy .tagline {font-size:clamp(.86rem,3.45vw,1.05rem)!important;line-height:1.5!important;margin-bottom:24px!important;}
+  .hero-copy .buttons {width:100%!important;display:flex!important;flex-direction:column!important;gap:12px!important;margin:0!important;}
+  .hero-copy .buttons .btn {width:min(100%,290px)!important;text-align:center!important;padding:14px 17px!important;}
+  .header {padding-left:5%!important;padding-right:5%!important;}
+  .header .brand {min-width:0!important;}
+  .header .brand img {width:45px!important;height:45px!important;flex-shrink:0!important;}
+  .section-title h2,.cta h2 {overflow-wrap:break-word;}
+  .race-content,.tile,.features article {padding:20px!important;}
+  .stripe {min-height:47px!important;display:flex!important;align-items:center!important;justify-content:center!important;flex-wrap:nowrap!important;}
+}
