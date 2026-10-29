@@ -187,3 +187,20 @@ body:has(>.header + main > .hero) .stripe{padding-right:65px!important;overflow:
 
 /* Match call-to-action panel to footer navy */
 .cta{background:#061b36!important;}
+/* White circular backing for the full OTD logo in the homepage hero. */
+.hero-mascot{position:relative!important;isolation:isolate!important;display:flex!important;align-items:center!important;justify-content:center!important}
+.hero-mascot::before{content:"";position:absolute;z-index:-1;width:min(95%,470px);aspect-ratio:1;border-radius:50%;background:#fff;box-shadow:0 12px 35px rgba(0,0,0,.14)}
+.hero-mascot img{position:relative;z-index:1}
+@media(max-width:900px){.hero-mascot::before{width:min(66vw,290px,85%)}}
+
+/* Refined homepage hero typography and vertical rhythm. */
+.hero-copy{display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:0!important}
+.hero-copy .kicker{display:block!important;margin:0 0 clamp(12px,1.5vw,22px)!important;line-height:1.35!important;letter-spacing:.17em!important}
+.hero-copy .hero-heading{margin:0!important;padding:0!important}
+.hero-copy h1{font-size:clamp(4.2rem,6.2vw,7.3rem)!important;line-height:.93!important;letter-spacing:.008em!important;margin:0 0 clamp(20px,2vw,30px)!important}
+.hero-copy h1 em{display:inline-block!important;margin-top:.06em!important}
+.hero-copy>p{font-size:clamp(1.05rem,1.35vw,1.3rem)!important;line-height:1.45!important;margin:0 0 15px!important;max-width:35rem!important}
+.hero-copy .tagline{font-size:clamp(.91rem,1.04vw,1.06rem)!important;line-height:1.5!important;margin:0 0 23px!important;letter-spacing:0!important}
+.hero-copy .buttons{margin:0!important;gap:12px!important;align-items:center!important}
+@media(max-width:900px){.hero-copy{align-items:center!important}.hero-copy h1{font-size:clamp(3.3rem,10vw,6rem)!important}.hero-copy>p{margin-left:auto!important;margin-right:auto!important}}
+@media(max-width:600px){.hero-copy .kicker{margin-bottom:12px!important}.hero-copy h1{font-size:clamp(3.05rem,12vw,4.5rem)!important;margin-bottom:18px!important}.hero-copy>p{margin-bottom:12px!important}.hero-copy .tagline{margin-bottom:19px!important}}
