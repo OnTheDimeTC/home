@@ -1,0 +1,40 @@
+{
+  "pageTitle": "Sponsorship & Opportunities",
+  "intro": "Help make The Merriest Night a memorable community celebration at Timber Creek Park on December 13, 2026.",
+  "eventName": "The Merriest Night",
+  "eventDate": "December 13, 2026",
+  "location": "Timber Creek Park",
+  "email": "Onthedimetc@yahoo.com",
+  "opportunities": [
+    {
+      "title": "Race Sponsors",
+      "eyebrow": "SUPPORT THE RACE",
+      "description": "Support the event and help us create a memorable experience for runners, walkers, and families. Contact us to discuss sponsorship possibilities and recognition options.",
+      "subject": "The Merriest Night — Race Sponsorship Inquiry"
+    },
+    {
+      "title": "Corporate Sponsor Teams",
+      "eyebrow": "BRING YOUR TEAM",
+      "description": "Interested in participating as a company or organization? Ask about getting your employees involved together and potential corporate sponsorship opportunities.",
+      "subject": "The Merriest Night — Corporate Team Inquiry"
+    },
+    {
+      "title": "Craft Vendors",
+      "eyebrow": "NORTH POLE MAIN STREET",
+      "description": "We are looking for craft vendors and makers interested in being part of our festive North Pole Main Street. Reach out with information about your business and what you would like to offer.",
+      "subject": "The Merriest Night — Craft Vendor Inquiry"
+    },
+    {
+      "title": "Food & Beverage Vendors",
+      "eyebrow": "HOLIDAY FESTIVITIES",
+      "description": "Interested in bringing food or beverages to the event? Contact us to discuss potential vendor opportunities and event requirements.",
+      "subject": "The Merriest Night — Food Vendor Inquiry"
+    },
+    {
+      "title": "Community Partners & Volunteers",
+      "eyebrow": "GET INVOLVED",
+      "description": "Local groups, organizations, and individuals who would like to contribute to the holiday atmosphere or help on event day are welcome to inquire.",
+      "subject": "The Merriest Night — Community Partner or Volunteer Inquiry"
+    }
+  ]
+}

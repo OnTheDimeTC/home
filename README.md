@@ -17,3 +17,10 @@ All HTML pages use <base href="/home/"> so shared assets and navigation resolve 
 
 
 Updated clean routes: `/home/live/` and `/home/historical/` (or `/live/` and `/historical/` once the custom domain is attached to this repository). Legacy results routes are retained for existing links. Favicon source is full-body Daisy, centered with generous transparent padding; references have a version query to refresh cached icons.
+
+
+### New informational sections
+Homepage: Planning An Event links. Services: race director FAQ. Events: volunteer/vendor/sponsorship inquiry. These are informational and do not submit or store data. Existing contact link handles inquiries.
+
+## Sponsorship & Opportunities page
+The `/opportunities/` page is powered by `opportunities.json` at the repository root. To update the opportunities before Decap CMS is installed, edit that file in GitHub (pencil icon), changing titles, descriptions, email subjects, or adding/removing entries from the `opportunities` list. Keep the JSON syntax valid. `assets/opportunities.js` renders the cards automatically. Once Decap CMS is configured, this JSON can be registered as an editable file collection. No sponsorship prices, guaranteed placements, or confirmed vendor spaces are claimed on this page.

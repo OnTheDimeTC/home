@@ -228,3 +228,22 @@ body:has(>.header + main > .hero) .stripe{padding-right:65px!important;overflow:
 /* Tight white halo: circle just beyond the logo lettering, not a giant disc. */
 @media(min-width:901px){.hero-mascot::before{width:min(90%,365px)!important;max-width:365px!important;box-shadow:0 6px 18px rgba(0,0,0,.10)!important}.hero-mascot img{width:min(90%,370px)!important;max-height:390px!important}}
 @media(max-width:900px){.hero-mascot::before{width:min(63vw,265px)!important}.hero-mascot img{width:min(65vw,270px)!important}}
+
+/* Additional race-director and event information */
+.otd-action-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;max-width:1100px;margin:28px auto 0}.otd-action{display:flex;flex-direction:column;gap:12px;padding:25px;background:#fff;border:1px solid #d8e1eb;border-radius:16px;text-decoration:none;color:#061b36;box-shadow:0 7px 20px rgba(4,20,40,.06)}.otd-action strong{font-size:1.16rem}.otd-action span{line-height:1.55}.otd-action:hover{border-color:#ff4d0d;transform:translateY(-2px)}.otd-faq{max-width:1120px;margin:auto}.otd-faq-item{margin:12px auto;padding:18px 22px;border:1px solid #d8e1eb;border-radius:12px;background:#fff;color:#061b36;max-width:900px}.otd-faq-item summary{font-weight:750;cursor:pointer}.otd-faq-item p{margin:12px 0 0;line-height:1.6}.otd-partners{background:#f2f6f5}@media(max-width:760px){.otd-action-grid{grid-template-columns:1fr}}
+
+/* Sponsorship and Opportunities */
+.opportunities-head{background:linear-gradient(110deg,#061b36,#102b49);border-bottom:3px solid #ff4e12}
+.opportunities-section{max-width:1200px;margin:auto}
+.opportunities-feature{display:grid;grid-template-columns:minmax(230px,.75fr) 1.25fr;align-items:center;gap:clamp(25px,5vw,70px);padding:clamp(22px,4vw,48px);border-radius:20px;background:#f0f5f2;margin-bottom:55px}
+.opportunities-feature img{display:block;width:100%;max-width:400px;border-radius:14px;background:white}
+.opportunities-feature h2{color:#07362b;font-size:clamp(28px,3vw,46px);line-height:1.1}
+.opportunities-feature p{line-height:1.7}
+.opportunities-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:24px}
+.opportunity-card{background:#fff;border:1px solid #dce3eb;border-top:4px solid #ff4e12;border-radius:16px;padding:30px;box-shadow:0 9px 25px rgba(6,27,54,.06);display:flex;flex-direction:column;align-items:flex-start}
+.opportunity-card h3{font-size:clamp(23px,2.5vw,30px);margin:12px 0;color:#061b36}
+.opportunity-card p{line-height:1.7;flex:1;color:#31435a}
+.opportunity-card .btn{margin-top:14px;max-width:100%;white-space:normal;text-align:center}
+.opportunities-contact{background:#061b36;color:#fff;text-align:center}
+.opportunities-contact-inner{max-width:780px;margin:auto}.opportunities-contact h2{color:#fff;font-size:clamp(28px,3.4vw,44px)}.opportunities-contact p{line-height:1.7;margin:14px auto 24px}
+@media(max-width:700px){.opportunities-feature,.opportunities-grid{grid-template-columns:1fr}.opportunities-feature img{max-width:290px;margin:auto}.opportunity-card{padding:24px}}
