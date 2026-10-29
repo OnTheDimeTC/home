@@ -400,3 +400,8 @@ body:has(>.header + main > .hero) .stripe{padding-right:65px!important;overflow:
 .otd-news-image,.otd-opportunity-image{display:block;width:100%;max-height:220px;object-fit:contain;object-position:center;margin:0 0 1rem;border-radius:12px;background:#f6f8f9}
 .otd-opportunity-image{max-height:160px;object-position:left center}
 @media(max-width:700px){.otd-news-image{max-height:180px}.otd-opportunity-image{max-height:130px}}
+
+/* CMS-driven Events page: multiple events and optional images */
+#events-list .event-detail{margin-top:0;margin-bottom:36px}
+#events-list .event-detail:last-child{margin-bottom:0}
+#events-list .event-detail:not(:has(img)){grid-template-columns:1fr}

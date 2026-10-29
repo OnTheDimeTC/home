@@ -24,3 +24,7 @@ This package adds Pages CMS to your existing GitHub Pages website. It does not c
 
 ## Uploading race logos and images
 In Pages CMS, open Featured Races & Announcements or Get Involved. Select a race/event, click its image field, and upload or select a logo/photo. The file is stored in `assets/uploads/` and its path is saved in the JSON automatically. Announcement cards and individual opportunity cards also support optional images. PNG, JPG, and WebP are good choices; use transparent PNG for logos. Save the CMS form to publish via GitHub Pages.
+
+
+### Manage Events page races
+In Pages CMS, open **Events Page - Add or Delete Races**. Use **Add** under the Races list to create a new event; upload a logo, enter the race information, and save. Remove an event from the same list to delete it from the Events page. The homepage Featured Races list is independent. Events are stored in `events.json` and displayed automatically by `assets/events-page.js`.

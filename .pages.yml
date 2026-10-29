@@ -5,6 +5,31 @@ media:
   output: /assets/uploads
 
 content:
+  - name: events_page
+    label: Events Page - Add or Delete Races
+    type: file
+    path: events.json
+    format: json
+    fields:
+      - name: races
+        label: Races on the Events page (add, reorder, or delete)
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name}"
+        fields:
+          - { name: name, label: Race name, type: string, required: true }
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: headline, label: Large heading, type: string }
+          - { name: date, label: Race date, type: string }
+          - { name: location, label: Location, type: string }
+          - { name: description, label: Race description, type: text }
+          - { name: extra, label: Additional information (optional), type: text }
+          - { name: image, label: Upload race logo or image, type: image }
+          - { name: link, label: Registration or information URL, type: string }
+          - { name: button, label: Button text, type: string }
+
   - name: featured_races
     label: Featured Races & Announcements
     type: file

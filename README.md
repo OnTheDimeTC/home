@@ -29,3 +29,7 @@ The `/opportunities/` page is powered by `opportunities.json` at the repository 
 Update `opportunities.json`. Each entry in `events` becomes its own expandable event dropdown. Add an event object with `name`, `date`, `location`, `image`, `summary`, `status`, and `opportunities`. Each opportunity has `title`, `eyebrow`, `description`, and `subject`. The email address is controlled by the top-level `email` field. The first event opens by default.
 
 **Image uploads:** The CMS configuration includes upload/select image fields for race logos, event logos, announcement images, and opportunity images. Media files are saved in `assets/uploads/`.
+
+
+### Manage Events page races
+In Pages CMS, open **Events Page - Add or Delete Races**. Use **Add** under the Races list to create a new event; upload a logo, enter the race information, and save. Remove an event from the same list to delete it from the Events page. The homepage Featured Races list is independent. Events are stored in `events.json` and displayed automatically by `assets/events-page.js`.

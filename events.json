@@ -1,0 +1,16 @@
+{
+  "races": [
+    {
+      "name": "The Merriest Night",
+      "eyebrow": "THE MERRIEST NIGHT",
+      "headline": "A Night Full Of Holiday Magic",
+      "date": "December 13, 2026",
+      "location": "Timber Creek Park",
+      "description": "Choose from the 5K Run, Mile Walk/Run, and Daisy's Reindeer Run. Stick around for complimentary hot chocolate, food trucks, North Pole Main Street, crafts, ornaments, music, and holiday entertainment.",
+      "extra": "Register before December 1 to receive free race swag at packet pickup.",
+      "image": "assets/merriest-logo.png",
+      "link": "https://runsignup.com/Race/NJ/Blackwood/TheMerriestNight",
+      "button": "Register for The Merriest Night ↗"
+    }
+  ]
+}
