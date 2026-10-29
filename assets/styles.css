@@ -97,3 +97,43 @@ body.results-fullscreen{height:100dvh;overflow:hidden;background:#fff}
 @media(max-width:900px){.hero{height:auto!important;min-height:calc(100svh - var(--otd-header-height) - var(--otd-stripe-height) - var(--otd-arrow-band-height))!important;padding:35px 6%!important}.hero-mascot img{max-height:25svh!important;width:auto!important;max-width:70vw!important}}
 @media(max-width:600px){:root{--otd-header-height:84px;--otd-stripe-height:58px;--otd-arrow-band-height:48px}.hero{gap:12px!important;padding:18px 6%!important}.hero h1{font-size:clamp(2.6rem,11vw,4.5rem)!important}.hero .buttons{margin:14px 0!important}.hero-mascot img{max-height:20svh!important}.stripe{font-size:.67rem!important;line-height:1.5!important}.scroll-arrow-band .scroll-cue{height:42px}}
 @media(prefers-reduced-motion:reduce){.scroll-arrow-band .scroll-cue{animation:none!important}}
+
+/* Stable first-screen hero, full orange slogan, and visible arrow below it. */
+:root{--otd-header-height:100px;--otd-stripe-height:54px;--otd-arrow-band-height:56px}
+body:has(>.header + main > .hero) .header{min-height:var(--otd-header-height);box-sizing:border-box}
+body:has(>.header + main > .hero) .hero{height:calc(100svh - var(--otd-header-height) - var(--otd-stripe-height) - var(--otd-arrow-band-height))!important;min-height:380px!important;box-sizing:border-box!important}
+body:has(>.header + main > .hero) .stripe{height:var(--otd-stripe-height)!important;min-height:0!important;display:flex!important;align-items:center!important;justify-content:center!important;flex-wrap:nowrap!important;gap:clamp(8px,2vw,28px)!important;padding:8px 16px!important;white-space:nowrap!important;overflow:visible!important;font-size:clamp(.78rem,1.35vw,1.2rem)!important;letter-spacing:.035em!important}
+.stripe .stripe-item{padding:0!important;flex:0 0 auto}
+.stripe .stripe-star{padding:0!important;flex:0 0 auto}
+body:has(>.header + main > .hero) .scroll-arrow-band{display:flex!important;height:var(--otd-arrow-band-height)!important;min-height:var(--otd-arrow-band-height)!important;background:#061b36!important;position:relative!important;z-index:3!important;justify-content:center!important;align-items:center!important}
+.scroll-arrow-band .scroll-cue{display:flex!important;position:static!important;visibility:visible!important;opacity:1!important;width:52px!important;height:52px!important;align-items:center!important;justify-content:center!important;transform:none!important;animation:otd-chevron-bob 2s ease-in-out infinite!important}
+.scroll-arrow-band .google-chevron{display:block!important;width:23px!important;height:23px!important;border-right:4px solid white!important;border-bottom:4px solid white!important;transform:rotate(45deg)!important}
+h1,h2,h3,h4,h5,h6{text-transform:none!important}
+@media(max-width:900px){:root{--otd-header-height:86px;--otd-stripe-height:50px;--otd-arrow-band-height:50px}body:has(>.header + main > .hero) .hero{min-height:0!important;height:calc(100svh - var(--otd-header-height) - var(--otd-stripe-height) - var(--otd-arrow-band-height))!important;overflow:hidden!important}body:has(>.header + main > .hero) .hero-mascot img{max-height:22svh!important}.stripe{gap:8px!important}}
+@media(max-width:600px){:root{--otd-header-height:83px;--otd-stripe-height:45px;--otd-arrow-band-height:47px}body:has(>.header + main > .hero) .stripe{font-size:clamp(.49rem,2.25vw,.75rem)!important;gap:5px!important;letter-spacing:0!important;padding:5px 4px!important}body:has(>.header + main > .hero) .hero{padding:12px 5%!important;gap:8px!important}body:has(>.header + main > .hero) .hero-mascot img{max-height:18svh!important}}
+@media(max-height:600px){body:has(>.header + main > .hero) .hero{min-height:0!important}.hero-mascot img{max-height:38svh!important}}
+
+/* Clean scroll transition: orange slogan ends the hero; no navy band. */
+:root{--otd-arrow-band-height:44px}
+body:has(>.header + main > .hero) .scroll-arrow-band{
+  background:#fff!important;
+  height:var(--otd-arrow-band-height)!important;
+  min-height:var(--otd-arrow-band-height)!important;
+  border:0!important;
+  box-shadow:none!important;
+}
+.scroll-arrow-band .scroll-cue{
+  width:54px!important;height:42px!important;
+  animation:otd-chevron-bob 2.2s ease-in-out infinite!important;
+}
+.scroll-arrow-band .google-chevron{
+  border-right:4px solid #ff4b0b!important;
+  border-bottom:4px solid #ff4b0b!important;
+  width:19px!important;height:19px!important;
+  filter:none!important;
+}
+#featured-races{padding-top:48px!important}
+@media(max-width:600px){:root{--otd-arrow-band-height:40px}}
+/* Updated bridge landscape supplied by OTD, without white box. */
+.hero-photo{background:linear-gradient(90deg,rgba(2,11,25,.88) 0%,rgba(2,11,25,.62) 38%,rgba(2,11,25,.12) 100%),url('OTDLandscape.png') center center/cover no-repeat!important}
+.pagehead{background:linear-gradient(105deg,rgba(2,11,25,.84),rgba(6,22,44,.55)),url('OTDLandscape.png') center center/cover no-repeat!important}
