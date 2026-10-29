@@ -204,3 +204,13 @@ body:has(>.header + main > .hero) .stripe{padding-right:65px!important;overflow:
 .hero-copy .buttons{margin:0!important;gap:12px!important;align-items:center!important}
 @media(max-width:900px){.hero-copy{align-items:center!important}.hero-copy h1{font-size:clamp(3.3rem,10vw,6rem)!important}.hero-copy>p{margin-left:auto!important;margin-right:auto!important}}
 @media(max-width:600px){.hero-copy .kicker{margin-bottom:12px!important}.hero-copy h1{font-size:clamp(3.05rem,12vw,4.5rem)!important;margin-bottom:18px!important}.hero-copy>p{margin-bottom:12px!important}.hero-copy .tagline{margin-bottom:19px!important}}
+
+/* Enlarged white backing: full OTD logo sits entirely within the circle. */
+.hero-mascot{overflow:visible!important;min-width:0!important}
+.hero-mascot::before{width:min(100%,560px)!important;max-width:none!important;aspect-ratio:1!important;border-radius:50%!important;background:#fff!important;box-shadow:0 14px 34px rgba(0,0,0,.18)!important}
+.hero-mascot img{width:min(83%,450px)!important;max-height:470px!important;object-fit:contain!important;filter:none!important}
+@media(max-width:900px){.hero-mascot::before{width:min(82vw,360px)!important}.hero-mascot img{width:min(69vw,300px)!important;max-height:300px!important}}
+
+/* Raise homepage hero copy slightly for visual centering. */
+@media(min-width:901px){body:has(>.header + main > .hero) .hero-copy{transform:translateY(-24px)!important}}
+@media(max-width:900px){body:has(>.header + main > .hero) .hero-copy{transform:translateY(-12px)!important}}
