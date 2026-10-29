@@ -5,7 +5,7 @@
     "phone": "856-434-1614",
     "owner": "Jacob Marino",
     "instagram": "https://www.instagram.com/onthedimetiming/",
-    "facebook": ""
+    "facebook": "https://www.facebook.com/profile.php?id=61591928806733"
   },
   "featuredRaces": [
     {
@@ -16,6 +16,25 @@
       "link": "https://runsignup.com/Race/NJ/Blackwood/TheMerriestNight"
     }
   ],
+  "news": {
+    "eyebrow": "WHAT'S NEW",
+    "heading": "OTD V3 Is Here",
+    "intro": "We're proud to announce updates to the DaisyTech Timing System.",
+    "items": [
+      {
+        "title": "OTD Results",
+        "description": "A custom results site with Upcoming, Live, and Past race views. Upcoming participants load automatically ahead of race day, with seed times and PRs where MileSplit data is available."
+      },
+      {
+        "title": "Race Platform Integration",
+        "description": "Our Bridge App integrates RunSignup and MileSplit workflows for registration imports, check-ins, scoring, and official results publishing."
+      },
+      {
+        "title": "Timing System Improvements",
+        "description": "Updated OTD timer web app with custom starting sounds and additional safeguards."
+      }
+    ]
+  },
   "results": {
     "live": {
       "embedUrl": "https://onthedimetc.github.io/live/",
@@ -123,25 +142,6 @@
         "name": "Premium finish",
         "price": "$200",
         "detail": "13-foot inflatable finish arch. Other banners, signs and finish-line options available."
-      }
-    ]
-  },
-  "news": {
-    "eyebrow": "WHAT'S NEW",
-    "heading": "OTD V3 Is Here",
-    "intro": "We're proud to announce updates to the DaisyTech Timing System.",
-    "items": [
-      {
-        "title": "OTD Live V2",
-        "description": "A custom results site with Upcoming, Live, and Past race views. Upcoming participants load automatically ahead of race day, with seed times and PRs where MileSplit data is available."
-      },
-      {
-        "title": "Race Platform Integration",
-        "description": "Our Bridge App integrates RunSignup and MileSplit workflows for registration imports, check-ins, scoring, and official results publishing."
-      },
-      {
-        "title": "Timing System Improvements",
-        "description": "Updated OTD timer web app with custom starting sounds and additional safeguards."
       }
     ]
   }
