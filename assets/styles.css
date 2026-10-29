@@ -224,3 +224,7 @@ body:has(>.header + main > .hero) .stripe{padding-right:65px!important;overflow:
 .hero-mascot::before{width:min(72vw,300px)!important}
 .hero-mascot img{width:min(65vw,270px)!important;max-height:280px!important}
 }
+
+/* Tight white halo: circle just beyond the logo lettering, not a giant disc. */
+@media(min-width:901px){.hero-mascot::before{width:min(90%,365px)!important;max-width:365px!important;box-shadow:0 6px 18px rgba(0,0,0,.10)!important}.hero-mascot img{width:min(90%,370px)!important;max-height:390px!important}}
+@media(max-width:900px){.hero-mascot::before{width:min(63vw,265px)!important}.hero-mascot img{width:min(65vw,270px)!important}}
