@@ -375,3 +375,23 @@ body:has(>.header + main > .hero) .stripe{padding-right:65px!important;overflow:
 @supports not (height:100dvh){
   @media(max-width:600px){body:has(>.header + main > .hero) .hero{min-height:calc(100svh - 110px - 50px)!important;}}
 }
+
+/* Improve mobile hero readability: desktop-style dark overlay over the portrait sunset. */
+@media (max-width:900px){
+ body:has(>.header + main > .hero) .hero-photo{
+  background-image:linear-gradient(180deg,rgba(2,9,25,.68) 0%,rgba(2,9,25,.64) 34%,rgba(2,9,25,.70) 68%,rgba(2,9,25,.55) 100%),url('mobile-starry-bridge.png')!important;
+  opacity:1!important;
+ }
+ body:has(>.header + main > .hero) .hero-copy h1 em{color:#ff5b24!important;text-shadow:0 2px 12px rgba(0,0,0,.45)!important;}
+ body:has(>.header + main > .hero) .hero-copy .tagline,
+ body:has(>.header + main > .hero) .hero-copy>p{text-shadow:0 2px 9px rgba(0,0,0,.55)!important;}
+}
+
+/* Readable mobile orange slogan strip: two centered lines, never micro-text. */
+@media(max-width:600px){
+ .stripe{min-height:76px!important;height:auto!important;box-sizing:border-box!important;padding:12px 54px 12px 14px!important;display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-content:center!important;align-items:center!important;column-gap:7px!important;row-gap:5px!important;white-space:normal!important;line-height:1.2!important;}
+ .stripe .stripe-item,.stripe .stripe-star{font-size:clamp(12px,3.15vw,15px)!important;line-height:1.2!important;letter-spacing:0!important;padding:0!important;white-space:nowrap!important;}
+ .stripe .scroll-cue{position:absolute!important;right:6px!important;left:auto!important;top:50%!important;transform:translateY(-50%)!important;}
+ body:has(>.header + main > .hero) .hero{min-height:calc(100dvh - 110px - 76px)!important;}
+}
+@media(max-width:370px){.stripe .stripe-item,.stripe .stripe-star{font-size:11px!important}.stripe{column-gap:5px!important;padding-right:48px!important;}}
