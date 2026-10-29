@@ -125,5 +125,24 @@
         "detail": "13-foot inflatable finish arch. Other banners, signs and finish-line options available."
       }
     ]
+  },
+  "news": {
+    "eyebrow": "WHAT'S NEW",
+    "heading": "OTD V3 Is Here",
+    "intro": "We're proud to announce updates to the DaisyTech Timing System.",
+    "items": [
+      {
+        "title": "OTD Live V2",
+        "description": "A custom results site with Upcoming, Live, and Past race views. Upcoming participants load automatically ahead of race day, with seed times and PRs where MileSplit data is available."
+      },
+      {
+        "title": "Race Platform Integration",
+        "description": "Our Bridge App integrates RunSignup and MileSplit workflows for registration imports, check-ins, scoring, and official results publishing."
+      },
+      {
+        "title": "Timing System Improvements",
+        "description": "Updated OTD timer web app with custom starting sounds and additional safeguards."
+      }
+    ]
   }
 }

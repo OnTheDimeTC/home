@@ -27,3 +27,5 @@ The `/opportunities/` page is powered by `opportunities.json` at the repository 
 
 ## Editing sponsorship opportunities
 Update `opportunities.json`. Each entry in `events` becomes its own expandable event dropdown. Add an event object with `name`, `date`, `location`, `image`, `summary`, `status`, and `opportunities`. Each opportunity has `title`, `eyebrow`, `description`, and `subject`. The email address is controlled by the top-level `email` field. The first event opens by default.
+
+**Image uploads:** The CMS configuration includes upload/select image fields for race logos, event logos, announcement images, and opportunity images. Media files are saved in `assets/uploads/`.

@@ -1,0 +1,137 @@
+# OTD website editor configuration for https://app.pagescms.org
+# All edits are committed to the OnTheDimeTC/home GitHub repository.
+media:
+  input: assets/uploads
+  output: /assets/uploads
+
+content:
+  - name: featured_races
+    label: Featured Races & Announcements
+    type: file
+    path: content.json
+    format: json
+    fields:
+      - name: company
+        label: Company contact information
+        type: object
+        fields:
+          - { name: name, label: Company name, type: string }
+          - { name: email, label: Email, type: string }
+          - { name: phone, label: Phone, type: string }
+          - { name: owner, label: Owner, type: string }
+          - { name: instagram, label: Instagram URL, type: string }
+          - { name: facebook, label: Facebook URL, type: string }
+      - name: featuredRaces
+        label: Homepage featured races
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - { name: title, label: Race name, type: string }
+          - { name: tag, label: Date and location, type: string }
+          - { name: description, label: Description, type: text }
+          - { name: image, label: Race logo or banner, type: image }
+          - { name: link, label: Registration link, type: string }
+      - name: news
+        label: What's New section
+        type: object
+        fields:
+          - { name: eyebrow, label: Small label, type: string }
+          - { name: heading, label: Main heading, type: string }
+          - { name: intro, label: Introduction, type: text }
+          - name: items
+            label: Announcement cards
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{title}"
+            fields:
+              - { name: title, label: Title, type: string }
+              - { name: image, label: Announcement image (optional), type: image }
+              - { name: description, label: Description, type: text }
+      - name: results
+        label: Results links
+        type: object
+        fields:
+          - name: live
+            label: Live results
+            type: object
+            fields:
+              - { name: embedUrl, label: Embed URL, type: string }
+              - { name: openUrl, label: Open URL, type: string }
+          - name: past
+            label: Historical results
+            type: object
+            fields:
+              - { name: embedUrl, label: Embed URL, type: string }
+              - { name: openUrl, label: Open URL, type: string }
+      - name: pricing
+        label: Pricing and packages
+        type: object
+        fields:
+          - { name: intro, label: Pricing introduction, type: text }
+          - name: packages
+            label: Timing packages
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{name}"
+            fields:
+              - { name: name, label: Package name, type: string }
+              - { name: price, label: Price, type: string }
+              - { name: capacity, label: Capacity, type: string }
+              - { name: features, label: Included services, type: string, list: true }
+              - { name: organizer, label: Organizer responsibilities, type: string, list: true }
+          - name: extras
+            label: Add-ons
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{name}"
+            fields:
+              - { name: name, label: Add-on, type: string }
+              - { name: price, label: Price, type: string }
+              - { name: detail, label: Details, type: text }
+
+  - name: sponsorships
+    label: Get Involved - Event Opportunities
+    type: file
+    path: opportunities.json
+    format: json
+    fields:
+      - { name: pageTitle, label: Page heading, type: string }
+      - { name: intro, label: Page introduction, type: text }
+      - { name: email, label: Inquiry email, type: string }
+      - name: events
+        label: Events and their dropdowns
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name}"
+        fields:
+          - { name: id, label: Unique event ID (lowercase with hyphens), type: string }
+          - { name: name, label: Event name, type: string }
+          - { name: date, label: Event date, type: string }
+          - { name: location, label: Location, type: string }
+          - { name: image, label: Event logo or image, type: image }
+          - { name: summary, label: Summary, type: text }
+          - { name: status, label: Status text, type: string }
+          - name: opportunities
+            label: Available opportunities
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{title}"
+            fields:
+              - { name: title, label: Opportunity title, type: string }
+              - { name: eyebrow, label: Small label, type: string }
+              - { name: image, label: Opportunity image (optional), type: image }
+              - { name: description, label: Description, type: text }
+              - { name: subject, label: Email inquiry subject, type: string }
