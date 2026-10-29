@@ -22,7 +22,7 @@
     "intro": "We're proud to announce updates to the DaisyTech Timing System.",
     "items": [
       {
-        "title": "OTD Live V2",
+        "title": "OTD Results",
         "description": "A custom results site with Upcoming, Live, and Past race views. Upcoming participants load automatically ahead of race day, with seed times and PRs where MileSplit data is available."
       },
       {
