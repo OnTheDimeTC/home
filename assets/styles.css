@@ -214,3 +214,13 @@ body:has(>.header + main > .hero) .stripe{padding-right:65px!important;overflow:
 /* Raise homepage hero copy slightly for visual centering. */
 @media(min-width:901px){body:has(>.header + main > .hero) .hero-copy{transform:translateY(-24px)!important}}
 @media(max-width:900px){body:has(>.header + main > .hero) .hero-copy{transform:translateY(-12px)!important}}
+
+/* Balanced logo backing: compact white perimeter, no oversized disc. */
+@media(min-width:901px){
+.hero-mascot::before{width:min(100%,405px)!important;max-width:405px!important;box-shadow:0 9px 24px rgba(0,0,0,.12)!important}
+.hero-mascot img{width:min(90%,370px)!important;max-height:390px!important}
+}
+@media(max-width:900px){
+.hero-mascot::before{width:min(72vw,300px)!important}
+.hero-mascot img{width:min(65vw,270px)!important;max-height:280px!important}
+}
