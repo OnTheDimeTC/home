@@ -1,0 +1,35 @@
+{
+  "company": {
+    "email": "Onthedimetc@yahoo.com",
+    "phone": "856-434-1614",
+    "instagram": "",
+    "facebook": ""
+  },
+  "featuredRaces": [
+    {
+      "title": "The Merriest Night",
+      "tag": "Christmas Run & Holiday Festival",
+      "description": "Join us at Timber Creek Park for a festive 5K Run, Mile Walk/Run, and Daisy's Reindeer Run. Register before December 1st for free race swag at packet pickup. Enjoy complimentary hot chocolate, food, crafts, music, and holiday entertainment after the race.",
+      "image": "",
+      "emoji": "\ud83c\udf84",
+      "link": "https://runsignup.com/Race/NJ/Blackwood/TheMerriestNight"
+    }
+  ],
+  "results": {
+    "live": {
+      "description": "Live results, recent meets, and upcoming start lists. The live viewer refreshes automatically while open.",
+      "embedUrl": "https://onthedimetc.github.io/live/",
+      "openUrl": "https://onthedimetc.github.io/live/"
+    },
+    "past": {
+      "description": "Browse the official permanent results archive.",
+      "embedUrl": "https://onthedimetc.github.io/historicalresults/",
+      "openUrl": "https://onthedimetc.github.io/historicalresults/"
+    },
+    "upcoming": {
+      "description": "Upcoming meets and start lists appear in the live results hub when available.",
+      "embedUrl": "https://onthedimetc.github.io/live/",
+      "openUrl": "https://onthedimetc.github.io/live/"
+    }
+  }
+}
