@@ -1,0 +1,129 @@
+{
+  "company": {
+    "name": "On The Dime Timing Co.",
+    "email": "Onthedimetc@yahoo.com",
+    "phone": "856-434-1614",
+    "owner": "Jacob Marino",
+    "instagram": "https://www.instagram.com/onthedimetiming/",
+    "facebook": ""
+  },
+  "featuredRaces": [
+    {
+      "title": "The Merriest Night",
+      "tag": "December 13, 2026 • Timber Creek Park",
+      "description": "A festive evening of running and holiday celebration, featuring a 5K Run, Mile Walk/Run, and Daisy’s Reindeer Run. Register before December 1 for free race swag at packet pickup. Enjoy complimentary cocoa, holiday music, crafts, food, North Pole Main Street, and more.",
+      "image": "assets/merriest-banner.png",
+      "link": "https://runsignup.com/Race/NJ/Blackwood/TheMerriestNight"
+    }
+  ],
+  "results": {
+    "live": {
+      "embedUrl": "https://onthedimetc.github.io/live/",
+      "openUrl": "https://onthedimetc.github.io/live/"
+    },
+    "past": {
+      "embedUrl": "https://onthedimetc.github.io/historicalresults/",
+      "openUrl": "https://onthedimetc.github.io/historicalresults/"
+    }
+  },
+  "pricing": {
+    "intro": "Choose a package or build a custom combination of services for your event.",
+    "packages": [
+      {
+        "name": "On The Penny",
+        "price": "$200",
+        "capacity": "Up to 50 registrants",
+        "features": [
+          "Professional finish-line timing",
+          "RunSignup registration and processing",
+          "Official live results and age-group/team scoring",
+          "Finish-line clock",
+          "Basic race-day support",
+          "Basic participant bibs"
+        ],
+        "organizer": [
+          "Awards and trophies",
+          "Merchandise",
+          "Race advertising",
+          "Course setup and design",
+          "Event planning"
+        ]
+      },
+      {
+        "name": "On The Nickel",
+        "price": "$300",
+        "capacity": "Up to 100 registrants",
+        "features": [
+          "Everything in On The Penny",
+          "Event-planning assistance",
+          "Basic awards for top five male and female finishers"
+        ],
+        "organizer": [
+          "Other awards and trophies",
+          "Merchandise",
+          "Course setup and design",
+          "Most event planning",
+          "Event advertising"
+        ]
+      },
+      {
+        "name": "On The Dime",
+        "price": "$500",
+        "capacity": "Up to 150 registrants",
+        "features": [
+          "Everything in On The Nickel",
+          "Directional course signage and setup",
+          "Full race-planning assistance",
+          "Volunteer coordination assistance",
+          "Basic awards for seven age groups and overall finishers",
+          "Awards ceremony available 15 minutes after last finisher",
+          "Email and social media marketing assistance"
+        ],
+        "organizer": [
+          "Event merchandise",
+          "Course design"
+        ]
+      },
+      {
+        "name": "On The Quarter",
+        "price": "$750",
+        "capacity": "Up to 250 registrants; $2 per additional entry",
+        "features": [
+          "Everything in On The Dime",
+          "Distance-accurate course design",
+          "Staff-led course via bicycle or host-provided 4×4",
+          "Inflatable tube man at finish",
+          "Race-branded finish tape for first male/female finishers",
+          "Two basic trophies for top male and female finishers"
+        ],
+        "organizer": [
+          "Presence on race day",
+          "Posts to event social media",
+          "Event merchandise"
+        ]
+      }
+    ],
+    "extras": [
+      {
+        "name": "Event merchandise",
+        "price": "$7/shirt",
+        "detail": "Through The Corner Press; minimum order 30."
+      },
+      {
+        "name": "Custom engraved medals",
+        "price": "$4/medal",
+        "detail": "Event name engraving; fully custom medals available by arrangement."
+      },
+      {
+        "name": "Custom bibs",
+        "price": "$80 / 150 bibs",
+        "detail": "Minimum 150; each additional bib $0.32."
+      },
+      {
+        "name": "Premium finish",
+        "price": "$200",
+        "detail": "13-foot inflatable finish arch. Other banners, signs and finish-line options available."
+      }
+    ]
+  }
+}
