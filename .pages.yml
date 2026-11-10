@@ -29,6 +29,17 @@ content:
           - { name: image, label: Upload race logo or image, type: image }
           - { name: link, label: Registration or information URL, type: string }
           - { name: button, label: Button text, type: string }
+          - name: colorTheme
+            label: Text color preset
+            type: select
+            options:
+              values:
+                - { value: otd, label: OTD Navy & Orange }
+                - { value: holiday, label: Holiday Green }
+                - { value: custom, label: Custom Colors }
+          - { name: headingColor, label: Custom heading color (hex), type: string }
+          - { name: textColor, label: Custom description color (hex), type: string }
+          - { name: accentColor, label: Custom small heading color (hex), type: string }
 
   - name: featured_races
     label: Featured Races & Announcements
@@ -147,6 +158,17 @@ content:
           - { name: image, label: Event logo or image, type: image }
           - { name: summary, label: Summary, type: text }
           - { name: status, label: Status text, type: string }
+          - name: colorTheme
+            label: Text color preset
+            type: select
+            options:
+              values:
+                - { value: otd, label: OTD Navy & Orange }
+                - { value: holiday, label: Holiday Green }
+                - { value: custom, label: Custom Colors }
+          - { name: headingColor, label: Custom heading color (hex), type: string }
+          - { name: textColor, label: Custom description color (hex), type: string }
+          - { name: accentColor, label: Custom small heading color (hex), type: string }
           - name: opportunities
             label: Available opportunities
             type: object
