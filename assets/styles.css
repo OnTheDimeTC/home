@@ -405,3 +405,23 @@ body:has(>.header + main > .hero) .stripe{padding-right:65px!important;overflow:
 #events-list .event-detail{margin-top:0;margin-bottom:36px}
 #events-list .event-detail:last-child{margin-bottom:0}
 #events-list .event-detail:not(:has(img)){grid-template-columns:1fr}
+
+/* CMS per-event text themes. Default is OTD; holiday remains for The Merriest Night. */
+#events-list .event-detail, #opportunities-events .opp-event {
+ --race-heading:#061b36;--race-text:#40506a;--race-accent:#f66d0b;
+}
+#events-list .event-detail[data-color-theme="holiday"],
+#opportunities-events .opp-event[data-color-theme="holiday"] {
+ --race-heading:#06392f;--race-text:#344e47;--race-accent:#087657;
+}
+#events-list .event-detail h2,
+#opportunities-events .opp-event .opp-event-summary strong,
+#opportunities-events .opp-event .opp-event-intro h3,
+#opportunities-events .opp-event .opp-card h4 {color:var(--race-heading)!important}
+#events-list .event-detail p,
+#opportunities-events .opp-event .opp-event-meta,
+#opportunities-events .opp-event .opp-event-intro p,
+#opportunities-events .opp-event .opp-card p {color:var(--race-text)!important}
+#events-list .event-detail .kicker,
+#opportunities-events .opp-event .opp-event-label,
+#opportunities-events .opp-event .opp-card .kicker {color:var(--race-accent)!important}
