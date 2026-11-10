@@ -10,7 +10,9 @@
       "extra": "Register before December 1 to receive free race swag at packet pickup.",
       "image": "assets/merriest-logo.png",
       "link": "https://runsignup.com/Race/NJ/Blackwood/TheMerriestNight",
-      "button": "Register for The Merriest Night ↗"
+      "button": "Register for The Merriest Night ↗",
+      "colorTheme": "holiday",
+      "accentColor": "#00251d"
     },
     {
       "name": "Hill For Gill ",
