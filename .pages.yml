@@ -40,6 +40,8 @@ content:
           - { name: headingColor, label: Custom heading color (hex), type: string }
           - { name: textColor, label: Custom description color (hex), type: string }
           - { name: accentColor, label: Custom small heading color (hex), type: string }
+          - { name: buttonColor, label: Button background color (hex; blank uses OTD orange), type: string }
+          - { name: buttonTextColor, label: Button text color (hex; blank uses white), type: string }
 
   - name: featured_races
     label: Featured Races & Announcements
@@ -169,6 +171,8 @@ content:
           - { name: headingColor, label: Custom heading color (hex), type: string }
           - { name: textColor, label: Custom description color (hex), type: string }
           - { name: accentColor, label: Custom small heading color (hex), type: string }
+          - { name: buttonColor, label: Button background color (hex; blank uses OTD orange), type: string }
+          - { name: buttonTextColor, label: Button text color (hex; blank uses white), type: string }
           - name: opportunities
             label: Available opportunities
             type: object
