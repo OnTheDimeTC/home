@@ -24,7 +24,7 @@
       "image": "/assets/uploads/hillforgilllogo.png",
       "link": "https://runsignup.com/Race/NJ/MountLaurel/HillForGill",
       "button": "Register for The Hill For Gill Challenge",
-      "colorTheme": "otd",
+      "colorTheme": "custom",
       "headingColor": "#03376c",
       "accentColor": "#49a134"
     }
