@@ -11,7 +11,8 @@
       "image": "assets/merriest-logo.png",
       "link": "https://runsignup.com/Race/NJ/Blackwood/TheMerriestNight",
       "button": "Register for The Merriest Night ↗",
-      "colorTheme": "holiday",
+      "colorTheme": "custom",
+      "headingColor": "#00251d",
       "accentColor": "#00251d"
     },
     {
@@ -25,8 +26,8 @@
       "link": "https://runsignup.com/Race/NJ/MountLaurel/HillForGill",
       "button": "Register for The Hill For Gill Challenge",
       "colorTheme": "custom",
-      "headingColor": "#03376c",
-      "accentColor": "#49a134"
+      "headingColor": "#49a134",
+      "accentColor": " #03376c"
     }
   ]
 }
