@@ -425,3 +425,18 @@ body:has(>.header + main > .hero) .stripe{padding-right:65px!important;overflow:
 #events-list .event-detail .kicker,
 #opportunities-events .opp-event .opp-event-label,
 #opportunities-events .opp-event .opp-card .kicker {color:var(--race-accent)!important}
+
+/* Per-event registration and inquiry button colors; blank CMS fields keep orange/white. */
+#events-list .event-detail, #opportunities-events .opp-event {
+ --race-button:#f66d0b;--race-button-text:#fff;
+}
+#events-list .event-detail .btn.orange,
+#opportunities-events .opp-event .btn.orange {
+ background:var(--race-button)!important;
+ color:var(--race-button-text)!important;
+ border-color:var(--race-button)!important;
+}
+#events-list .event-detail .btn.orange:hover,
+#opportunities-events .opp-event .btn.orange:hover {
+ filter:brightness(.90);
+}
