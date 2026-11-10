@@ -3,7 +3,7 @@
 const list=document.getElementById('events-list');if(!list)return;
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const themeFor=r=>['otd','holiday','custom'].includes(r?.colorTheme)?r.colorTheme:(String(r?.name||'').trim().toLowerCase()==='the merriest night'?'holiday':'otd');
-const styleFor=r=>themeFor(r)==='custom'?[['headingColor','--race-heading'],['textColor','--race-text'],['accentColor','--race-accent']].filter(([k])=>/^#(?:[0-9a-f]{3}|[0-9a-f]{6})$/i.test(r?.[k]||'')).map(([k,v])=>v+':'+r[k]).join(';'):'';
+const styleFor=r=>(themeFor(r)==='custom'?[['headingColor','--race-heading'],['textColor','--race-text'],['accentColor','--race-accent']]:[]).concat([['buttonColor','--race-button'],['buttonTextColor','--race-button-text']]).filter(([k])=>/^#(?:[0-9a-f]{3}|[0-9a-f]{6})$/i.test(r?.[k]||'')).map(([k,v])=>v+':'+r[k]).join(';');
 const safeUrl=s=>{try{const u=new URL(s,document.baseURI);return ['https:','http:'].includes(u.protocol)?u.href:''}catch{return ''}};
 fetch(new URL('events.json',document.baseURI),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('events.json not available');return r.json()}).then(data=>{
  const races=Array.isArray(data.races)?data.races:[];
